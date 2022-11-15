@@ -20,7 +20,7 @@ public class DeleteMethod {
 		HttpDelete deleteRequest=new HttpDelete("");
 		//String jsonBody="{\"firstName\":\"vikram\",\"lastName:balasubramanian\",\"sports:football\",\"country:india\",\"salary:50000\"}";
 		//StringEntity entity=new StringEntity(jsonBody, ContentType.APPLICATION_JSON);
-		//deleteRequest.setEntity(entity);
+		deleteRequest.setEntity(entity);
 		//deleteRequest.setHeader("Content-Type","application/json");
 		CloseableHttpResponse httpResponse = closeableHttpClient.execute(deleteRequest);
 		//BufferedReader br=new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent()));
